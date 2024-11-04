@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sip &amp; Story Cafe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #3a5b29;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero {
+            position: relative;
+            text-align: center;
+            background-color: #d0d7b4;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: cover;
+        }
+
+        .hero-text {
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+            background-color: #3a5b29;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: -40px;
+            position: relative;
+            z-index: 1;
+        }
+
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        section h3 {
+            color: #3a5b29;
+        }
+
+        .menu-category {
+            margin: 30px 0;
+            border-bottom: 2px solid #6B4F4F;
+            padding-bottom: 10px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            border-bottom: 1px solid #d3d3d3;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #3a5b29;
+            color: white;
+            padding: 15px 0;
+            width: 100%;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+
+        .social-media a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact-form button {
+            background-color: #3a5b29;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background-color: #2b3c1a;
+        }
+
+        .about-image {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        .highlight {
+            background-color: #f5f5dc; /* Beige color */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sip &amp; Story</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#library">Library</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <img src="../images/cafe.jpg" alt="Cozy Cafe" class="hero-image">
+        <div class="hero-text">
+            <p>“A book, a coffee, and a quiet corner – sometimes that’s all you need to escape the world.”</p>
+<p><mark style="background-color: #f5f5dc;">“Where every sip tells a story.”</mark></p>
+
+        </div>
+    </section>
+
+    <section id="about">
+		<em><h3>About Us</h3></em>
+        <i><p>
+            Welcome to Sip and Story, your cozy retreat for delightful coffee and warm conversation. Nestled in a tranquil setting, our cafe invites you to unwind with a good book or catch up with friends.
+            Enjoy our carefully crafted menu of rich coffees, soothing teas, and fresh pastries. Settle into our charming library nook, where stories await and every sip inspires a new tale. Join us and create lasting memories in a space designed for comfort and connection.
+			</p></i>
+        <img src="../gt.jpg" alt="Our Cafe" class="about-image">
+    </section>
+
+    <section id="menu">
+        <h1>Sip and Story Cafe Menu</h1>
+        <div class="menu-category">
+            <h2>Coffee</h2>
+            <div class="menu-item"><span>House Brew</span><span>$3.00</span></div>
+            <div class="menu-item"><span>Espresso</span><span>$2.00</span></div>
+            <div class="menu-item"><span>Cappuccino</span><span>$4.00</span></div>
+        </div>
+        <div class="menu-category">
+            <h2>Tea</h2>
+            <div class="menu-item"><span>Herbal Infusion</span><span>$3.00</span></div>
+            <div class="menu-item"><span>Chai Latte</span><span>$4.00</span></div>
+        </div>
+        <div class="menu-category">
+            <h2>Smoothies</h2>
+            <div class="menu-item"><span>Berry Blast</span><span>$5.00</span></div>
+            <div class="menu-item"><span>Mango Madness</span><span>$5.00</span></div>
+        </div>
+        <div class="menu-category">
+            <h2>Juices</h2>
+            <div class="menu-item"><span>Fresh Orange Juice</span><span>$4.00</span></div>
+            <div class="menu-item"><span>Green Detox Juice</span><span>$4.50</span></div>
+        </div>
+        <div class="menu-category">
+            <h2>Pastries</h2>
+            <div class="menu-item"><span>Chocolate Croissant</span><span>$2.50</span></div>
+            <div class="menu-item"><span>Blueberry Muffin</span><span>$2.50</span></div>
+            <div class="menu-item"><span>Apple Pie Slice</span><span>$3.00</span></div>
+            <div class="menu-item"><span>Cinnamon Roll</span><span>$3.50</span></div>
+            <div class="menu-item"><span>Lemon Tart</span><span>$3.00</span></div>
+            <div class="menu-item"><span>Pecan Pie Slice</span><span>$3.50</span></div>
+        </div>
+    </section>
+
+    <section id="library">
+        <h3>Our Library</h3>
+        <p>Discover our selection of books and manga, perfect for a cozy reading session with your favorite drink.</p>
+        <h4>Book of the Week</h4>
+        <p><em>The Alchemist</em> by Paulo Coelho</p>
+    </section>
+
+    <footer id="contact">
+        <h3>Contact Us</h3>
+        <p>Email: <a href="mailto:info@sipandstory.com">info@sipandstory.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">123-456-7890</a></p>
+        <p>Opening Hours: 8 AM - 8 PM</p>
+        <div class="social-media">
+            <p>Follow us on social media:</p>
+            <a href="#">Facebook</a> | 
+            <a href="#">Instagram</a> | 
+            <a href="#">Twitter</a>
+        </div>
+
+        <h4>Get in Touch</h4>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </footer>
+</body>
+</html>
+
+
